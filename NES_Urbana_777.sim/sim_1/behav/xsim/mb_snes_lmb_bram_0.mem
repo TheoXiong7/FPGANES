@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+// Vivado v2022.2 (64-bit)
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Created on Saturday December 14, 2024 - 07:33:10 am, from:
+//
+//     Map file     - c:\Users\theox\Desktop\NES_Urbana_777\NES_Urbana_777.gen\sources_1\bd\mb_snes\mb_snes.bmm
+//     Data file(s) - c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'dut_mb_snes_i_microblaze_0.dut_mb_snes_i_microblaze_0_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

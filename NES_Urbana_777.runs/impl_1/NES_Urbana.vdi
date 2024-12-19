@@ -1,0 +1,183 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Dec 14 15:24:21 2024
+# Process ID: 10096
+# Current directory: C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/impl_1
+# Command line: vivado.exe -log NES_Urbana.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source NES_Urbana.tcl -notrace
+# Log file: C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/impl_1/NES_Urbana.vdi
+# Journal file: C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/impl_1\vivado.jou
+# Running On: beeeebopppp, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 17011 MB
+#-----------------------------------------------------------
+source NES_Urbana.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/theox/Desktop/NES_Urbana_777/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+Command: link_design -top NES_Urbana -part xc7s50csga324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'internal_ram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0.dcp' for cell 'vga_to_hdmi'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_axi_uartlite_0_0/mb_snes_axi_uartlite_0_0.dcp' for cell 'mb_snes_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_clk_wiz_1_0/mb_snes_clk_wiz_1_0.dcp' for cell 'mb_snes_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_int_0/mb_snes_gpio_usb_int_0.dcp' for cell 'mb_snes_i/gpio_usb_int'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_keycode_0/mb_snes_gpio_usb_keycode_0.dcp' for cell 'mb_snes_i/gpio_usb_keycode'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_rst_0/mb_snes_gpio_usb_rst_0.dcp' for cell 'mb_snes_i/gpio_usb_rst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_mdm_1_0/mb_snes_mdm_1_0.dcp' for cell 'mb_snes_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_0/mb_snes_microblaze_0_0.dcp' for cell 'mb_snes_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_axi_intc_0/mb_snes_microblaze_0_axi_intc_0.dcp' for cell 'mb_snes_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_rst_clk_wiz_1_100M_0/mb_snes_rst_clk_wiz_1_100M_0.dcp' for cell 'mb_snes_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_spi_usb_0/mb_snes_spi_usb_0.dcp' for cell 'mb_snes_i/spi_usb'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_timer_usb_axi_0/mb_snes_timer_usb_axi_0.dcp' for cell 'mb_snes_i/timer_usb_axi'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_xbar_0/mb_snes_xbar_0.dcp' for cell 'mb_snes_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_dlmb_bram_if_cntlr_0/mb_snes_dlmb_bram_if_cntlr_0.dcp' for cell 'mb_snes_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_dlmb_v10_0/mb_snes_dlmb_v10_0.dcp' for cell 'mb_snes_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_ilmb_bram_if_cntlr_0/mb_snes_ilmb_bram_if_cntlr_0.dcp' for cell 'mb_snes_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_ilmb_v10_0/mb_snes_ilmb_v10_0.dcp' for cell 'mb_snes_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_lmb_bram_0/mb_snes_lmb_bram_0.dcp' for cell 'mb_snes_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 893.699 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 440 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. clk_wiz/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. mb_snes_i/clk_wiz_1/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_wiz/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'mb_snes_i/clk_wiz_1/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_axi_uartlite_0_0/mb_snes_axi_uartlite_0_0_board.xdc] for cell 'mb_snes_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_axi_uartlite_0_0/mb_snes_axi_uartlite_0_0_board.xdc] for cell 'mb_snes_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_axi_uartlite_0_0/mb_snes_axi_uartlite_0_0.xdc] for cell 'mb_snes_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_axi_uartlite_0_0/mb_snes_axi_uartlite_0_0.xdc] for cell 'mb_snes_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_clk_wiz_1_0/mb_snes_clk_wiz_1_0_board.xdc] for cell 'mb_snes_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_clk_wiz_1_0/mb_snes_clk_wiz_1_0_board.xdc] for cell 'mb_snes_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_clk_wiz_1_0/mb_snes_clk_wiz_1_0.xdc] for cell 'mb_snes_i/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_clk_wiz_1_0/mb_snes_clk_wiz_1_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_clk_wiz_1_0/mb_snes_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_clk_wiz_1_0/mb_snes_clk_wiz_1_0.xdc] for cell 'mb_snes_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_int_0/mb_snes_gpio_usb_int_0_board.xdc] for cell 'mb_snes_i/gpio_usb_int/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_int_0/mb_snes_gpio_usb_int_0_board.xdc] for cell 'mb_snes_i/gpio_usb_int/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_int_0/mb_snes_gpio_usb_int_0.xdc] for cell 'mb_snes_i/gpio_usb_int/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_int_0/mb_snes_gpio_usb_int_0.xdc] for cell 'mb_snes_i/gpio_usb_int/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_keycode_0/mb_snes_gpio_usb_keycode_0_board.xdc] for cell 'mb_snes_i/gpio_usb_keycode/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_keycode_0/mb_snes_gpio_usb_keycode_0_board.xdc] for cell 'mb_snes_i/gpio_usb_keycode/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_keycode_0/mb_snes_gpio_usb_keycode_0.xdc] for cell 'mb_snes_i/gpio_usb_keycode/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_keycode_0/mb_snes_gpio_usb_keycode_0.xdc] for cell 'mb_snes_i/gpio_usb_keycode/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_rst_0/mb_snes_gpio_usb_rst_0_board.xdc] for cell 'mb_snes_i/gpio_usb_rst/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_rst_0/mb_snes_gpio_usb_rst_0_board.xdc] for cell 'mb_snes_i/gpio_usb_rst/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_rst_0/mb_snes_gpio_usb_rst_0.xdc] for cell 'mb_snes_i/gpio_usb_rst/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_rst_0/mb_snes_gpio_usb_rst_0.xdc] for cell 'mb_snes_i/gpio_usb_rst/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_0/mb_snes_microblaze_0_0.xdc] for cell 'mb_snes_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_0/mb_snes_microblaze_0_0.xdc] for cell 'mb_snes_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_axi_intc_0/mb_snes_microblaze_0_axi_intc_0.xdc] for cell 'mb_snes_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_axi_intc_0/mb_snes_microblaze_0_axi_intc_0.xdc] for cell 'mb_snes_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_rst_clk_wiz_1_100M_0/mb_snes_rst_clk_wiz_1_100M_0_board.xdc] for cell 'mb_snes_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_rst_clk_wiz_1_100M_0/mb_snes_rst_clk_wiz_1_100M_0_board.xdc] for cell 'mb_snes_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_rst_clk_wiz_1_100M_0/mb_snes_rst_clk_wiz_1_100M_0.xdc] for cell 'mb_snes_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_rst_clk_wiz_1_100M_0/mb_snes_rst_clk_wiz_1_100M_0.xdc] for cell 'mb_snes_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_spi_usb_0/mb_snes_spi_usb_0_board.xdc] for cell 'mb_snes_i/spi_usb/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_spi_usb_0/mb_snes_spi_usb_0_board.xdc] for cell 'mb_snes_i/spi_usb/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_spi_usb_0/mb_snes_spi_usb_0.xdc] for cell 'mb_snes_i/spi_usb/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_spi_usb_0/mb_snes_spi_usb_0.xdc] for cell 'mb_snes_i/spi_usb/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_timer_usb_axi_0/mb_snes_timer_usb_axi_0.xdc] for cell 'mb_snes_i/timer_usb_axi/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_timer_usb_axi_0/mb_snes_timer_usb_axi_0.xdc] for cell 'mb_snes_i/timer_usb_axi/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz/inst'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz/inst'
+Parsing XDC File [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/constrs_1/new/constraints.xdc]
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_mdm_1_0/mb_snes_mdm_1_0.xdc] for cell 'mb_snes_i/mdm_1/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_mdm_1_0/mb_snes_mdm_1_0.xdc] for cell 'mb_snes_i/mdm_1/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_axi_intc_0/mb_snes_microblaze_0_axi_intc_0_clocks.xdc] for cell 'mb_snes_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_axi_intc_0/mb_snes_microblaze_0_axi_intc_0_clocks.xdc] for cell 'mb_snes_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_spi_usb_0/mb_snes_spi_usb_0_clocks.xdc] for cell 'mb_snes_i/spi_usb/U0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_spi_usb_0/mb_snes_spi_usb_0_clocks.xdc] for cell 'mb_snes_i/spi_usb/U0'
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_snes_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_snes_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_snes_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_snes_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_snes_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_snes_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_snes_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_snes_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Project 1-1714] 14 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance mb_snes_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+Generating merged BMM file for the design top 'NES_Urbana'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1467.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 247 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 145 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 68 instances
+
+35 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.328 ; gain = 1032.570
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s50'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net clk_wiz/inst/clk_out4 has multiple drivers: clk_wiz/inst/clkout4_buf/O, and cpu_clk_reg/Q.
+INFO: [Project 1-461] DRC finished with 1 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.636 . Memory (MB): peak = 1467.328 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 13 Warnings, 0 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 14 15:24:42 2024...

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1734211295" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
+  <File Type="PA-TCL" Name="NES_Urbana.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="NES_Urbana_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="NES_Urbana_reports.tcl"/>
+  <File Type="RDS-RDS" Name="NES_Urbana.vds"/>
+  <File Type="RDS-UTIL" Name="NES_Urbana_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="NES_Urbana_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="NES_Urbana.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="NES_Urbana_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="NES_Urbana_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_snes/mb_snes.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OAM/OAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NES-FPGA/src/OAM/OAM.v"/>
+        <Attr Name="ImportTime" Val="1734160265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/chrrom/chrrom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NES-FPGA/src/chrrom/chrrom.v"/>
+        <Attr Name="ImportTime" Val="1734160265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/vram/vram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NES-FPGA/src/vram/vram.v"/>
+        <Attr Name="ImportTime" Val="1734160265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ROM.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/VGA_Controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NES-FPGA/src/VGA_Controller.sv"/>
+        <Attr Name="ImportTime" Val="1734160265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NES-FPGA/src/controller.sv"/>
+        <Attr Name="ImportTime" Val="1734160265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dpram.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hex_driver.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/ppu.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NES-FPGA/src/ppu.sv"/>
+        <Attr Name="ImportTime" Val="1734160265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/t65/T65_Pack.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NES-FPGA/src/t65/T65_Pack.vhd"/>
+        <Attr Name="ImportTime" Val="1734160265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/t65/T65_MCode.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NES-FPGA/src/t65/T65_MCode.vhd"/>
+        <Attr Name="ImportTime" Val="1734160265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/t65/T65_ALU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NES-FPGA/src/t65/T65_ALU.vhd"/>
+        <Attr Name="ImportTime" Val="1734160265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/t65/T65.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NES-FPGA/src/t65/T65.vhd"/>
+        <Attr Name="ImportTime" Val="1734160265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NES-FPGA/src/top.sv"/>
+        <Attr Name="ImportTime" Val="1734160265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/supermariobros.nes"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="NES_Urbana"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_tx_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_gpio_usb_rst_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_gpio_usb_int_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_spi_usb_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_microblaze_0_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_gpio_usb_keycode_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_snes_timer_usb_axi_0"/>
+</GenRun>

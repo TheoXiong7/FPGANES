@@ -1,0 +1,989 @@
+
+*** Running vivado
+    with args -log NES_Urbana.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source NES_Urbana.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source NES_Urbana.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/theox/Desktop/NES_Urbana_777/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top NES_Urbana -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11416
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-6901] identifier 'controller_din' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/controller.sv:15]
+WARNING: [Synth 8-6901] identifier 'controller_din' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/controller.sv:16]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:53]
+WARNING: [Synth 8-6901] identifier 'DrawY' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:134]
+WARNING: [Synth 8-6901] identifier 'DrawY' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:136]
+WARNING: [Synth 8-6901] identifier 'chr_dout0' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:168]
+WARNING: [Synth 8-6901] identifier 'vram_dout0' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:173]
+WARNING: [Synth 8-6901] identifier 'palette_mem' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:179]
+WARNING: [Synth 8-6901] identifier 'palette_mem' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:181]
+WARNING: [Synth 8-6901] identifier 'palette_mem' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:185]
+WARNING: [Synth 8-6901] identifier 'palette_mem' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:187]
+WARNING: [Synth 8-6901] identifier 'vram_wren0' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:200]
+WARNING: [Synth 8-6901] identifier 'vram_din0' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:201]
+WARNING: [Synth 8-6901] identifier 'vram_addr0' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:202]
+WARNING: [Synth 8-6901] identifier 'chr_addr0' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:207]
+WARNING: [Synth 8-6901] identifier 'chr_addr0' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:211]
+WARNING: [Synth 8-6901] identifier 'vram_wren0' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:215]
+WARNING: [Synth 8-6901] identifier 'vram_addr0' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:229]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:280]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:280]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:280]
+WARNING: [Synth 8-6901] identifier 'x_final' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:281]
+WARNING: [Synth 8-6901] identifier 'x_final' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:299]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:305]
+WARNING: [Synth 8-6901] identifier 'sprite_count' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:305]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:306]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:309]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:313]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:332]
+WARNING: [Synth 8-6901] identifier 'DrawY' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:333]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:338]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:338]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:338]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:342]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:358]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:371]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:379]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:387]
+WARNING: [Synth 8-6901] identifier 'sprite_count' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:387]
+WARNING: [Synth 8-6901] identifier 'DrawY' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:387]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:388]
+WARNING: [Synth 8-6901] identifier 'sprite_attr' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:391]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:391]
+WARNING: [Synth 8-6901] identifier 'sprite_tile' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:392]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:392]
+WARNING: [Synth 8-6901] identifier 'DrawY' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:392]
+WARNING: [Synth 8-6901] identifier 'sprite_y' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:392]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:392]
+WARNING: [Synth 8-6901] identifier 'sprite_tile' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:394]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:394]
+WARNING: [Synth 8-6901] identifier 'DrawY' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:394]
+WARNING: [Synth 8-6901] identifier 'sprite_y' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:394]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:394]
+WARNING: [Synth 8-6901] identifier 'sprite_attr' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:399]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:399]
+WARNING: [Synth 8-6901] identifier 'sprite_tile' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:400]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:400]
+WARNING: [Synth 8-6901] identifier 'DrawY' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:400]
+WARNING: [Synth 8-6901] identifier 'sprite_y' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:400]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:400]
+WARNING: [Synth 8-6901] identifier 'sprite_tile' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:402]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:402]
+WARNING: [Synth 8-6901] identifier 'DrawY' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:402]
+WARNING: [Synth 8-6901] identifier 'sprite_y' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:402]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:402]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:471]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:474]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:482]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:486]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:486]
+WARNING: [Synth 8-6901] identifier 'DrawY' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:486]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:487]
+WARNING: [Synth 8-6901] identifier 'y_pos_in_sprite' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:490]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:529]
+WARNING: [Synth 8-6901] identifier 'DrawY' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:530]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:605]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:605]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:607]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:608]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:610]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:611]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:615]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:615]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:617]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:618]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:620]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:621]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:625]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:625]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:627]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:628]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:630]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:631]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:635]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:635]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:637]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:638]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:640]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:641]
+WARNING: [Synth 8-6901] identifier 'DrawX' is used before its declaration [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:645]
+INFO: [Common 17-14] Message 'Synth 8-6901' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-11241] undeclared symbol 'clk_ibuf', assumed default net type 'wire' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:46]
+INFO: [Synth 8-11241] undeclared symbol 'cpu_reset', assumed default net type 'wire' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:48]
+INFO: [Synth 8-11241] undeclared symbol 'cpu_enable', assumed default net type 'wire' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:48]
+INFO: [Synth 8-11241] undeclared symbol 'cpu_rdy', assumed default net type 'wire' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:48]
+INFO: [Synth 8-11241] undeclared symbol 'cpu_read', assumed default net type 'wire' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:48]
+WARNING: [Synth 8-8895] 'clk_ibuf' is already implicitly declared on line 46 [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:73]
+INFO: [Synth 8-11241] undeclared symbol 'locked', assumed default net type 'wire' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:85]
+WARNING: [Synth 8-8895] 'locked' is already implicitly declared on line 85 [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:124]
+INFO: [Synth 8-11241] undeclared symbol 'cpu_addr', assumed default net type 'wire' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:175]
+INFO: [Synth 8-11241] undeclared symbol 'keycode0_gpio', assumed default net type 'wire' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:186]
+INFO: [Synth 8-11241] undeclared symbol 'keycode1_gpio', assumed default net type 'wire' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:187]
+WARNING: [Synth 8-8895] 'cpu_reset' is already implicitly declared on line 48 [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:199]
+WARNING: [Synth 8-8895] 'cpu_enable' is already implicitly declared on line 48 [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:199]
+WARNING: [Synth 8-8895] 'cpu_rdy' is already implicitly declared on line 48 [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:199]
+WARNING: [Synth 8-8895] 'cpu_read' is already implicitly declared on line 48 [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:200]
+WARNING: [Synth 8-8895] 'cpu_addr' is already implicitly declared on line 175 [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:201]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1218.227 ; gain = 410.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'NES_Urbana' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_driver' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:63]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:94]
+INFO: [Synth 8-251] ERROR: Could not open ROM file! [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:96]
+INFO: [Synth 8-251] First few bytes of PRG ROM: xx xx xx xx [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:102]
+INFO: [Synth 8-251] Reset vector at 0xFFFC: xx xx [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:104]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:63]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:936]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_axi_uartlite_0_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_axi_uartlite_0_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_clk_wiz_1_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_clk_wiz_1_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_gpio_usb_int_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_gpio_usb_int_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_gpio_usb_int_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_gpio_usb_int_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_gpio_usb_keycode_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_gpio_usb_keycode_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_gpio_usb_keycode_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_gpio_usb_keycode_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_gpio_usb_rst_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_gpio_usb_rst_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_gpio_usb_rst_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_gpio_usb_rst_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_mdm_1_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_mdm_1_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_microblaze_0_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_microblaze_0_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_microblaze_0_axi_intc_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_microblaze_0_axi_intc_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_microblaze_0_axi_periph_0' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1602]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_B1CTFA' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_B1CTFA' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_18HZBUD' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_18HZBUD' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1VP2ER5' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1VP2ER5' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:276]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_WACD4I' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:408]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_WACD4I' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:408]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_NJ5Y61' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:540]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_NJ5Y61' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:540]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1MNPZSQ' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:672]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1MNPZSQ' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:672]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_ZS21HA' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:804]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_ZS21HA' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:804]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_18NWMLM' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2926]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_18NWMLM' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2926]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_xbar_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_xbar_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_xbar_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_snes_xbar_0' is unconnected for instance 'xbar' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2651]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_snes_xbar_0' is unconnected for instance 'xbar' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2651]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'mb_snes_xbar_0' has 40 connections declared, but only 38 given [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2651]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_microblaze_0_axi_periph_0' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1602]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_10U7NFA' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2692]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_dlmb_bram_if_cntlr_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_dlmb_v10_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_dlmb_v10_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_dlmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_snes_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2838]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb_snes_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2838]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_ilmb_bram_if_cntlr_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_ilmb_v10_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_ilmb_v10_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_ilmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_snes_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2884]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb_snes_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2884]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_lmb_bram_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_lmb_bram_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_lmb_bram_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb_snes_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2909]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb_snes_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2909]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb_snes_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2909]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_10U7NFA' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:2692]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_microblaze_0_xlconcat_0' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_xlconcat_0/synth/mb_snes_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_microblaze_0_xlconcat_0' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_xlconcat_0/synth/mb_snes_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_rst_clk_wiz_1_100M_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_rst_clk_wiz_1_100M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_snes_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1538]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_snes_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1538]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb_snes_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1538]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_spi_usb_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_spi_usb_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_spi_usb_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_spi_usb_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_snes_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1547]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_snes_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1547]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_snes_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1547]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_snes_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1547]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_snes_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1547]
+WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_snes_spi_usb_0' has 33 connections declared, but only 28 given [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1547]
+INFO: [Synth 8-6157] synthesizing module 'mb_snes_timer_usb_axi_0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_timer_usb_axi_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes_timer_usb_axi_0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/.Xil/Vivado-37044-beeeebopppp/realtime/mb_snes_timer_usb_axi_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_snes_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1576]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_snes_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1576]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'mb_snes_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1576]
+WARNING: [Synth 8-7023] instance 'timer_usb_axi' of module 'mb_snes_timer_usb_axi_0' has 26 connections declared, but only 23 given [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:1576]
+INFO: [Synth 8-6155] done synthesizing module 'mb_snes' (0#1) [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/synth/mb_snes.v:936]
+WARNING: [Synth 8-689] width (1) of port connection 'gpio_usb_keycode_0_tri_o' does not match port width (32) of module 'mb_snes' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:186]
+WARNING: [Synth 8-689] width (1) of port connection 'gpio_usb_keycode_1_tri_o' does not match port width (32) of module 'mb_snes' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:187]
+INFO: [Synth 8-638] synthesizing module 'T65' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/t65/T65.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'T65_MCode' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/t65/T65_MCode.vhd:95]
+INFO: [Synth 8-226] default block is never used [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/t65/T65_MCode.vhd:235]
+WARNING: [Synth 8-614] signal 'BCD_en' is read in the process but is not in the sensitivity list [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/t65/T65_MCode.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'T65_MCode' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/t65/T65_MCode.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'T65_ALU' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/t65/T65_ALU.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'T65_ALU' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/t65/T65_ALU.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'T65' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/t65/T65.vhd:166]
+WARNING: [Synth 8-689] width (16) of port connection 'a' does not match port width (24) of module 'T65' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:228]
+INFO: [Synth 8-6157] synthesizing module 'ppu' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:66]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:114]
+INFO: [Synth 8-6157] synthesizing module 'chrrom' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/chrrom/chrrom.v:4]
+INFO: [Synth 8-6157] synthesizing module 'dual_port_ram_diff_clk' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/dpram.sv:3]
+	Parameter ADDR_WIDTH_A bound to: 32'sb00000000000000000000000000001101 
+	Parameter DATA_WIDTH_A bound to: 32'sb00000000000000000000000000001000 
+	Parameter ADDR_WIDTH_B bound to: 32'sb00000000000000000000000000001101 
+	Parameter DATA_WIDTH_B bound to: 32'sb00000000000000000000000000001000 
+	Parameter INIT_FILE bound to: ../cart_init/chr.mif - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_ram_diff_clk' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/dpram.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'chrrom' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/chrrom/chrrom.v:4]
+INFO: [Synth 8-6157] synthesizing module 'vram' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/vram/vram.v:5]
+INFO: [Synth 8-6157] synthesizing module 'dual_port_ram_diff_clk__parameterized0' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/dpram.sv:3]
+	Parameter ADDR_WIDTH_A bound to: 32'sb00000000000000000000000000001011 
+	Parameter DATA_WIDTH_A bound to: 32'sb00000000000000000000000000001000 
+	Parameter ADDR_WIDTH_B bound to: 32'sb00000000000000000000000000001011 
+	Parameter DATA_WIDTH_B bound to: 32'sb00000000000000000000000000001000 
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_ram_diff_clk__parameterized0' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/dpram.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'vram' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/vram/vram.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:281]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:306]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:487]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Controller' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/VGA_Controller.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Controller' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/VGA_Controller.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'ppu' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/controller.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/controller.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'OAM' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/OAM/OAM.v:4]
+INFO: [Synth 8-6157] synthesizing module 'dual_port_ram_diff_clk__parameterized1' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/dpram.sv:3]
+	Parameter ADDR_WIDTH_A bound to: 32'sb00000000000000000000000000001000 
+	Parameter DATA_WIDTH_A bound to: 32'sb00000000000000000000000000001000 
+	Parameter ADDR_WIDTH_B bound to: 32'sb00000000000000000000000000001000 
+	Parameter DATA_WIDTH_B bound to: 32'sb00000000000000000000000000001000 
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_ram_diff_clk__parameterized1' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/dpram.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'OAM' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/OAM/OAM.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'NES_Urbana' (0#1) [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:1]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/new/ROM.sv:74]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element PPUMASK_reg was removed.  [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:73]
+WARNING: [Synth 8-6014] Unused sequential element sprite_zero_rendered_reg was removed.  [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:480]
+WARNING: [Synth 8-6014] Unused sequential element sprite_zero_rendered_next_reg was removed.  [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:480]
+WARNING: [Synth 8-3936] Found unconnected internal register 'nexttile_reg' and it is trimmed from '10' to '9' bits. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:337]
+WARNING: [Synth 8-3936] Found unconnected internal register 'nextline_reg' and it is trimmed from '10' to '9' bits. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:336]
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_final_reg' and it is trimmed from '10' to '9' bits. [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/ppu.sv:333]
+WARNING: [Synth 8-87] always_comb on 'ppu_addr_reg' did not result in combinational logic [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:248]
+WARNING: [Synth 8-87] always_comb on 'ppu_din_reg' did not result in combinational logic [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:249]
+WARNING: [Synth 8-87] always_comb on 'ppu_wren_reg' did not result in combinational logic [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:250]
+WARNING: [Synth 8-7129] Port select in module ppu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Mode[1] in module T65_ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Mode[0] in module T65_ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P[5] in module T65_MCode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P[4] in module T65_MCode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P[3] in module T65_MCode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P[2] in module T65_MCode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Abort_n in module T65 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1639.594 ; gain = 831.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1639.594 ; gain = 831.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1639.594 ; gain = 831.391
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.234 . Memory (MB): peak = 1639.594 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_axi_uartlite_0_0/mb_snes_axi_uartlite_0_0/mb_snes_axi_uartlite_0_0_in_context.xdc] for cell 'mb_snes_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_axi_uartlite_0_0/mb_snes_axi_uartlite_0_0/mb_snes_axi_uartlite_0_0_in_context.xdc] for cell 'mb_snes_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_clk_wiz_1_0/mb_snes_clk_wiz_1_0/mb_snes_clk_wiz_1_0_in_context.xdc] for cell 'mb_snes_i/clk_wiz_1'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_clk_wiz_1_0/mb_snes_clk_wiz_1_0/mb_snes_clk_wiz_1_0_in_context.xdc] for cell 'mb_snes_i/clk_wiz_1'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_int_0/mb_snes_gpio_usb_int_0/mb_snes_gpio_usb_int_0_in_context.xdc] for cell 'mb_snes_i/gpio_usb_int'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_int_0/mb_snes_gpio_usb_int_0/mb_snes_gpio_usb_int_0_in_context.xdc] for cell 'mb_snes_i/gpio_usb_int'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_keycode_0/mb_snes_gpio_usb_keycode_0/mb_snes_gpio_usb_keycode_0_in_context.xdc] for cell 'mb_snes_i/gpio_usb_keycode'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_keycode_0/mb_snes_gpio_usb_keycode_0/mb_snes_gpio_usb_keycode_0_in_context.xdc] for cell 'mb_snes_i/gpio_usb_keycode'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_rst_0/mb_snes_gpio_usb_rst_0/mb_snes_gpio_usb_rst_0_in_context.xdc] for cell 'mb_snes_i/gpio_usb_rst'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_gpio_usb_rst_0/mb_snes_gpio_usb_rst_0/mb_snes_gpio_usb_rst_0_in_context.xdc] for cell 'mb_snes_i/gpio_usb_rst'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_mdm_1_0/mb_snes_mdm_1_0/mb_snes_mdm_1_0_in_context.xdc] for cell 'mb_snes_i/mdm_1'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_mdm_1_0/mb_snes_mdm_1_0/mb_snes_mdm_1_0_in_context.xdc] for cell 'mb_snes_i/mdm_1'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_0/mb_snes_microblaze_0_0/mb_snes_microblaze_0_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_0/mb_snes_microblaze_0_0/mb_snes_microblaze_0_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_axi_intc_0/mb_snes_microblaze_0_axi_intc_0/mb_snes_microblaze_0_axi_intc_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_microblaze_0_axi_intc_0/mb_snes_microblaze_0_axi_intc_0/mb_snes_microblaze_0_axi_intc_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_xbar_0/mb_snes_xbar_0/mb_snes_xbar_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_xbar_0/mb_snes_xbar_0/mb_snes_xbar_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_dlmb_bram_if_cntlr_0/mb_snes_dlmb_bram_if_cntlr_0/mb_snes_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_dlmb_bram_if_cntlr_0/mb_snes_dlmb_bram_if_cntlr_0/mb_snes_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_dlmb_v10_0/mb_snes_dlmb_v10_0/mb_snes_dlmb_v10_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_dlmb_v10_0/mb_snes_dlmb_v10_0/mb_snes_dlmb_v10_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_ilmb_bram_if_cntlr_0/mb_snes_ilmb_bram_if_cntlr_0/mb_snes_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_ilmb_bram_if_cntlr_0/mb_snes_ilmb_bram_if_cntlr_0/mb_snes_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_ilmb_v10_0/mb_snes_ilmb_v10_0/mb_snes_dlmb_v10_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_ilmb_v10_0/mb_snes_ilmb_v10_0/mb_snes_dlmb_v10_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_lmb_bram_0/mb_snes_lmb_bram_0/mb_snes_lmb_bram_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_lmb_bram_0/mb_snes_lmb_bram_0/mb_snes_lmb_bram_0_in_context.xdc] for cell 'mb_snes_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_rst_clk_wiz_1_100M_0/mb_snes_rst_clk_wiz_1_100M_0/mb_snes_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mb_snes_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_rst_clk_wiz_1_100M_0/mb_snes_rst_clk_wiz_1_100M_0/mb_snes_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mb_snes_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_spi_usb_0/mb_snes_spi_usb_0/mb_snes_spi_usb_0_in_context.xdc] for cell 'mb_snes_i/spi_usb'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_spi_usb_0/mb_snes_spi_usb_0/mb_snes_spi_usb_0_in_context.xdc] for cell 'mb_snes_i/spi_usb'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_timer_usb_axi_0/mb_snes_timer_usb_axi_0/mb_snes_timer_usb_axi_0_in_context.xdc] for cell 'mb_snes_i/timer_usb_axi'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/bd/mb_snes/ip/mb_snes_timer_usb_axi_0/mb_snes_timer_usb_axi_0/mb_snes_timer_usb_axi_0_in_context.xdc] for cell 'mb_snes_i/timer_usb_axi'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'vga_to_hdmi'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'vga_to_hdmi'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'internal_ram'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'internal_ram'
+Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Finished Parsing XDC File [c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Parsing XDC File [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NES_Urbana_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/NES_Urbana_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1934.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1934.191 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_snes_i/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_snes_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 16).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/gpio_usb_int. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/gpio_usb_keycode. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/gpio_usb_rst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/spi_usb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_snes_i/timer_usb_axi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_to_hdmi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for internal_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'ppu_addr_reg' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:248]
+WARNING: [Synth 8-327] inferring latch for variable 'ppu_din_reg' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:249]
+WARNING: [Synth 8-327] inferring latch for variable 'ppu_wren_reg' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:250]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:45 ; elapsed = 00:01:51 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 7     
+	   3 Input   13 Bit       Adders := 3     
+	   2 Input   13 Bit       Adders := 6     
+	   2 Input   11 Bit       Adders := 6     
+	   3 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 5     
+	   3 Input    9 Bit       Adders := 9     
+	   2 Input    8 Bit       Adders := 6     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 4     
+	   3 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 1     
+	   3 Input    3 Bit       Adders := 8     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               16 Bit    Registers := 7     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 146   
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 33    
++---RAMs : 
+	              64K Bit	(8192 X 8 bit)          RAMs := 2     
+	              16K Bit	(2048 X 8 bit)          RAMs := 2     
+	               2K Bit	(256 X 8 bit)          RAMs := 2     
++---Muxes : 
+	   4 Input   24 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 17    
+	   4 Input   16 Bit        Muxes := 2     
+	  11 Input   16 Bit        Muxes := 1     
+	   8 Input   16 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 8     
+	   4 Input   13 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 8     
+	   4 Input   11 Bit        Muxes := 2     
+	   3 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 5     
+	   4 Input    9 Bit        Muxes := 2     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 45    
+	   4 Input    8 Bit        Muxes := 6     
+	   8 Input    8 Bit        Muxes := 3     
+	  16 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	  10 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 9     
+	   4 Input    5 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 6     
+	  10 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 25    
+	   3 Input    4 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 3     
+	   8 Input    4 Bit        Muxes := 3     
+	   7 Input    4 Bit        Muxes := 2     
+	  14 Input    4 Bit        Muxes := 3     
+	   9 Input    4 Bit        Muxes := 1     
+	  17 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 24    
+	  14 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 2     
+	  16 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 25    
+	   7 Input    2 Bit        Muxes := 8     
+	  17 Input    2 Bit        Muxes := 4     
+	   8 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 7     
+	   6 Input    2 Bit        Muxes := 5     
+	   5 Input    2 Bit        Muxes := 1     
+	  11 Input    2 Bit        Muxes := 1     
+	  13 Input    2 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 5     
+	  10 Input    2 Bit        Muxes := 2     
+	  16 Input    2 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 21    
+	   5 Input    1 Bit        Muxes := 57    
+	   6 Input    1 Bit        Muxes := 17    
+	   7 Input    1 Bit        Muxes := 22    
+	  14 Input    1 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 174   
+	   3 Input    1 Bit        Muxes := 20    
+	   4 Input    1 Bit        Muxes := 32    
+	  17 Input    1 Bit        Muxes := 10    
+	  12 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7257] Removed RAM (chrrom/chrrom_mem/ram_memory_a_reg) due to inactive write enable.
+WARNING: [Synth 8-6014] Unused sequential element chrrom/chrrom_mem/ram_memory_a_reg was removed. 
+WARNING: [Synth 8-7257] Removed RAM (chrrom/chrrom_mem/ram_memory_b_reg) due to inactive write enable.
+WARNING: [Synth 8-6014] Unused sequential element chrrom/chrrom_mem/ram_memory_b_reg was removed. 
+WARNING: [Synth 8-7257] Removed RAM (vram/vram_mem/ram_memory_b_reg) due to inactive write enable.
+WARNING: [Synth 8-6014] Unused sequential element vram/vram_mem/ram_memory_b_reg was removed. 
+WARNING: [Synth 8-7257] Removed RAM (OAM/oam_mem/ram_memory_a_reg) due to inactive write enable.
+WARNING: [Synth 8-6014] Unused sequential element OAM/oam_mem/ram_memory_a_reg was removed. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:02:18 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ppu         | palettes   | 64x20         | LUT            | 
+|ppu         | palettes   | 64x14         | LUT            | 
+|ppu         | palettes   | 64x7          | LUT            | 
+|ppu         | palettes   | 64x20         | LUT            | 
+|ppu         | palettes   | 64x14         | LUT            | 
+|ppu         | palettes   | 64x7          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:15 ; elapsed = 00:02:22 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:15 ; elapsed = 00:02:22 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:15 ; elapsed = 00:02:23 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:18 ; elapsed = 00:02:25 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:18 ; elapsed = 00:02:25 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu_clk with 1st driver pin 'cpu_clk_reg/Q' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:83]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu_clk with 2nd driver pin 'clk_wiz/clk_out4' [C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.srcs/sources_1/imports/src/top.sv:79]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:18 ; elapsed = 00:02:25 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:18 ; elapsed = 00:02:25 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:18 ; elapsed = 00:02:26 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:18 ; elapsed = 00:02:26 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|NES_Urbana  | reset_ah_reg | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |mb_snes_xbar_0                  |         1|
+|2     |mb_snes_axi_uartlite_0_0        |         1|
+|3     |mb_snes_clk_wiz_1_0             |         1|
+|4     |mb_snes_gpio_usb_int_0          |         1|
+|5     |mb_snes_gpio_usb_keycode_0      |         1|
+|6     |mb_snes_gpio_usb_rst_0          |         1|
+|7     |mb_snes_mdm_1_0                 |         1|
+|8     |mb_snes_microblaze_0_0          |         1|
+|9     |mb_snes_microblaze_0_axi_intc_0 |         1|
+|10    |mb_snes_rst_clk_wiz_1_100M_0    |         1|
+|11    |mb_snes_spi_usb_0               |         1|
+|12    |mb_snes_timer_usb_axi_0         |         1|
+|13    |mb_snes_dlmb_bram_if_cntlr_0    |         1|
+|14    |mb_snes_dlmb_v10_0              |         1|
+|15    |mb_snes_ilmb_bram_if_cntlr_0    |         1|
+|16    |mb_snes_ilmb_v10_0              |         1|
+|17    |mb_snes_lmb_bram_0              |         1|
+|18    |clk_wiz_0                       |         1|
+|19    |hdmi_tx_0                       |         1|
+|20    |blk_mem_gen_0                   |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |blk_mem_gen                   |     1|
+|2     |clk_wiz                       |     1|
+|3     |hdmi_tx                       |     1|
+|4     |mb_snes_axi_uartlite_0        |     1|
+|5     |mb_snes_clk_wiz_1             |     1|
+|6     |mb_snes_dlmb_bram_if_cntlr    |     1|
+|7     |mb_snes_dlmb_v10              |     1|
+|8     |mb_snes_gpio_usb_int          |     1|
+|9     |mb_snes_gpio_usb_keycode      |     1|
+|10    |mb_snes_gpio_usb_rst          |     1|
+|11    |mb_snes_ilmb_bram_if_cntlr    |     1|
+|12    |mb_snes_ilmb_v10              |     1|
+|13    |mb_snes_lmb_bram              |     1|
+|14    |mb_snes_mdm_1                 |     1|
+|15    |mb_snes_microblaze_0          |     1|
+|16    |mb_snes_microblaze_0_axi_intc |     1|
+|17    |mb_snes_rst_clk_wiz_1_100M    |     1|
+|18    |mb_snes_spi_usb               |     1|
+|19    |mb_snes_timer_usb_axi         |     1|
+|20    |mb_snes_xbar                  |     1|
+|21    |BUFG                          |     1|
+|22    |CARRY4                        |    28|
+|23    |LUT1                          |    16|
+|24    |LUT2                          |    90|
+|25    |LUT3                          |    87|
+|26    |LUT4                          |    75|
+|27    |LUT5                          |   132|
+|28    |LUT6                          |   341|
+|29    |MUXF7                         |     3|
+|30    |SRL16E                        |     1|
+|31    |FDCE                          |   114|
+|32    |FDPE                          |     6|
+|33    |FDRE                          |    68|
+|34    |IBUF                          |     5|
+|35    |OBUF                          |    29|
++------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:18 ; elapsed = 00:02:26 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:43 ; elapsed = 00:02:07 . Memory (MB): peak = 1934.242 ; gain = 831.391
+Synthesis Optimization Complete : Time (s): cpu = 00:02:18 ; elapsed = 00:02:26 . Memory (MB): peak = 1934.242 ; gain = 1126.039
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1934.242 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1934.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 7283724e
+INFO: [Common 17-83] Releasing license: Synthesis
+153 Infos, 359 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:21 ; elapsed = 00:02:29 . Memory (MB): peak = 1934.242 ; gain = 1501.762
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/theox/Desktop/NES_Urbana_777/NES_Urbana_777.runs/synth_1/NES_Urbana.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file NES_Urbana_utilization_synth.rpt -pb NES_Urbana_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 14 15:24:14 2024...
